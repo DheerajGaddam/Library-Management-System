@@ -48,4 +48,4 @@ The backend supports asynchronous request handling, CORS, modular API versioning
 - 🧾 Enable PDF/CSV export of transaction history
 - 🐳 Docker support and CI/CD for production deployment
 
-This project serves as a reference implementation for full-stack app architecture, especially in educational domains requiring real-time d
+This project serves as a reference implementation for full-stack app architecture, especially in educational domains requiring real-time data management and UI-driven interactions.
