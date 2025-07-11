@@ -1,51 +1,51 @@
 # 📚 Library Management System
 
-The **Library Management System** is a full-stack web application designed to manage core library operations such as book cataloging, student records, and book issue/return workflows. Built with a decoupled architecture, the project uses **React.js** on the frontend and **FastAPI** on the backend, allowing seamless integration and scalability for future enhancements.
+The **Library Management System** is a full-stack web application designed to streamline the management of book inventories, student records, and issue/return transactions. Built using **FastAPI** for the backend and **React.js** for the frontend, the system follows a decoupled architecture with RESTful API communication, ensuring scalability and modularity.
 
-The backend is implemented using FastAPI and provides a RESTful API interface to manage data. It includes modular routing, CORS support, environment-based configurations, and is prepared for migration to persistent storage systems like PostgreSQL or MongoDB.
-
-The frontend is developed with React 18 using modern functional components, React Router DOM for client-side navigation, Tailwind CSS for styling, and Ant Design for UI components. Axios is used for communicating with the backend API, while React Toastify provides real-time notifications.
+The backend supports asynchronous request handling, CORS, modular API versioning, and a clean settings configuration. The frontend provides a responsive, real-time user interface built using Tailwind CSS and Ant Design.
 
 ## 🧩 Features
 
-- **📘 Book Inventory Management**
-  - Add, update, and delete books
-  - Check real-time availability and enforce limits
+- 📘 **Book Inventory Management**
+  - Add, edit, delete books
+  - Track availability and prevent over-borrowing
 
-- **🎓 Student Management**
-  - Maintain student records eligible for borrowing
-  - Link books to student accounts
+- 🎓 **Student Record Management**
+  - Maintain student database
+  - Link issued books and borrowing history
 
-- **🔄 Transaction Management**
-  - Track book issues and returns
-  - Automatically update book availability
-  - Enforce borrowing limits
+- 🔄 **Issue & Return Workflow**
+  - Record transactions and update availability
+  - Block duplicate or excessive borrowing
 
-- **📊 Admin Dashboard**
-  - View summary of total books, students, issued books
-  - Interactive and filterable data tables
+- 📊 **Admin Dashboard**
+  - View stats on issued books, overdue returns, and student activity
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Ant Design, Axios, React Router
-- **Backend**: FastAPI, Python 3.9+, Uvicorn, CORS middleware
-- **Tooling**: Vite/Webpack, PostCSS, Autoprefixer
+| Layer     | Technologies                                                                 |
+|-----------|-------------------------------------------------------------------------------|
+| Frontend  | React.js, Tailwind CSS, Ant Design, Axios, React Router DOM, React Toastify |
+| Backend   | FastAPI, Python 3.9+, Uvicorn, CORS middleware                              |
+| Tooling   | Vite/Webpack, PostCSS, Autoprefixer                                          |
 
-## 📈 Performance & Stats
+## 📈 Performance Overview
 
-- ✅ 200+ CRUD operations tested with zero failure
-- ✅ 100% consistency in issue/return logic and availability updates
-- ✅ 98.5% UI responsiveness success across mobile/tablet/desktop
-- ⚡ Average API response time under 120ms (local dev)
-- 🧪 Frontend load time ~1.5s (cold), <600ms (hot reload)
-- 🔁 Over 10,000 simulated API requests without crash or memory leak
+| Metric                          | Result                        |
+|----------------------------------|-------------------------------|
+| CRUD Operations (Books/Students) | ✅ 100% across 200+ test cases |
+| Transaction Logic Accuracy       | ✅ 100% consistency             |
+| UI Responsiveness                | ✅ 98.5% mobile/desktop pass    |
+| API Response Time (avg)          | ⚡ ~120ms                      |
+| API Requests Simulated           | 🔁 10,000+ successful calls     |
+| Load Time (Cold / Hot Reload)    | ❄️ ~1.5s / ♨️ <600ms           |
 
-## 🚀 Future Enhancements
+## 🚀 Planned Improvements
 
-- 🔐 Add JWT-based authentication and role-based access
-- 🗃️ Integrate PostgreSQL or MongoDB for persistent storage
-- 📅 Add overdue tracking, fine calculation, and reservation system
-- 🧾 Export transaction history as PDF/CSV
-- 🐳 Dockerize for container-based deployment
+- 🔐 Add JWT-based login and role-level access
+- 🗃️ Migrate to PostgreSQL or MongoDB for scalable persistence
+- 📅 Add overdue tracking, fine calculation, and reservations
+- 🧾 Enable PDF/CSV export of transaction history
+- 🐳 Docker support and CI/CD for production deployment
 
-This project serves as a robust educational reference and a scalable starting point for real-world library automation platforms.
+This project serves as a reference implementation for full-stack app architecture, especially in educational domains requiring real-time d
